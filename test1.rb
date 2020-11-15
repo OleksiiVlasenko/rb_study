@@ -11,6 +11,17 @@
 # puts ' a'.capitalize
 # puts letters
 #
+
+# class Integer
+#   def sum(n)
+#     n += n
+#   end
+# end
+
 arr = Array.new(10) { rand(1..9) }
 p arr
   p arr.map(&:odd?)
+p arr.map(&:real?)
+# p [*1..5].map(&:sum)
+p 122345.digits
+p 10.step(by: +1).take(4)
