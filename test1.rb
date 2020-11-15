@@ -33,3 +33,11 @@ end
 
 explictic { p '2'}
 explictic
+
+def implictic
+  return 'no block' unless block_given?
+  yield
+end
+
+implictic
+implictic {p '1'}
